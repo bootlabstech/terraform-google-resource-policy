@@ -15,3 +15,8 @@ resource "google_compute_resource_policy" "policy" {
     }
   }
 }
+resource "google_compute_disk_resource_policy_attachment" "attachment" {
+  name = google_compute_resource_policy.policy.name
+  disk = var.disk_name
+  zone = var.zone
+}

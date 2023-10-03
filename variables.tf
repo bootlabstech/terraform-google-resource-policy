@@ -11,3 +11,9 @@ variable "region" {
 variable "max_retention_days" {
   type        = number
 }
+variable "disk_name" {
+  type        = string
+}
+variable "zone" {
+  type        = string
+}
